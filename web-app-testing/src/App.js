@@ -1,6 +1,7 @@
 import React, {useState} from "react";
+import Display from "./components/Display";
+import DashBoard from "./components/DashBoard";
 import "./App.css";
-import BottomRow from "./BottomRow";
 
 function App() {
 const [homeScore, setHomeScore] = useState(0);
@@ -20,7 +21,7 @@ const [awayScore, setAwayScore] = useState(0);
             <div className="away__score">{awayScore}</div>
           </div>
         </div>
-        <BottomRow />
+        <Display />
       </section>
       <section className="buttons">
         <div className="homeButtons">
